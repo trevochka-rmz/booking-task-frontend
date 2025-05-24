@@ -1,0 +1,40 @@
+.time-slot {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+
+.time-slot:hover {
+    background: #f5f5f5;
+    border-color: #ccc;
+}
+
+.time-slot.selected {
+    background: #4285f4;
+    color: white;
+    border-color: #4285f4;
+}
+
+.time-slot.booked {
+    background: #f9f9f9;
+    color: #999;
+    cursor: not-allowed;
+    border-style: dashed;
+}
+
+.booked-label {
+    display: block;
+    font-size: 11px;
+    color: #e53935;
+    margin-top: 3px;
+}
+
+.time-slot.selected .booked-label {
+    color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,101 @@
+.booking-steps {
+    margin-bottom: 30px;
+}
+
+.steps-progress {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.steps-progress::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #eee;
+    z-index: 1;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #999;
+    border: 3px solid #fff;
+}
+
+.step.active .step-number {
+    background: #4285f4;
+    color: white;
+}
+
+.step.completed .step-number {
+    background: #34a853;
+    color: white;
+}
+
+.step-label {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.step.active .step-label {
+    color: #4285f4;
+    font-weight: 500;
+}
+
+.steps-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.prev-btn {
+    background: #f1f1f1;
+}
+
+.prev-btn:hover {
+    background: #e0e0e0;
+}
+
+.next-btn {
+    background: #4285f4;
+    color: white;
+}
+
+.next-btn:hover {
+    background: #3367d6;
+}
+
+.next-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
