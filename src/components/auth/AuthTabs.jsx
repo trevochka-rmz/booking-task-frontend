@@ -92,14 +92,14 @@ function AuthTabs({ onAuthSuccess }) {
                 loading={loading}
             />
 
-            {activeTab === 'login' && (
+            {/* {activeTab === 'login' && (
                 <button
                     className="forgot-password-button"
                     onClick={() => setShowForgotPassword(true)}
                 >
                     Забыли пароль?
                 </button>
-            )}
+            )} */}
         </div>
     );
 }

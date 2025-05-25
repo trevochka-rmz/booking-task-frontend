@@ -15,20 +15,19 @@ function WelcomePage() {
 
     return (
         <MainLayout>
-            /{/* <Header minimal={true} /> */}
-            <div className="welcome-content">
-                <h1>Добро пожаловать в мир квестов!</h1>
-                <p>
-                    Выберите игру, соберите команду и получите незабываемые
-                    впечатления
-                </p>
-                <button
-                    className="primary-button"
-                    onClick={() => setIsAuthModalOpen(true)}
-                >
-                    Начать
-                </button>
-            </div>
+            {/* <div className="welcome-content"> */}
+            <h1>Добро пожаловать в мир квестов!</h1>
+            <p>
+                Выберите игру, соберите команду и получите незабываемые
+                впечатления
+            </p>
+            <button
+                className="primary-button"
+                onClick={() => setIsAuthModalOpen(true)}
+            >
+                Начать
+            </button>
+            {/* </div> */}
             <AuthModal
                 isOpen={isAuthModalOpen}
                 onClose={() => setIsAuthModalOpen(false)}
