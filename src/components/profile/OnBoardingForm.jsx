@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Input from '../ui/Input';
 import Button from '../ui/Button';
 import FileUpload from '../ui/FileUpload';
-import './OnboardingForm.css';
+import './OnBoardingForm.css';
 
 function OnboardingForm({ initialData, onSubmit, onCancel }) {
     const {
