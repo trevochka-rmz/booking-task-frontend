@@ -3,7 +3,7 @@ import axios from 'axios';
 const api = axios.create({
     baseURL:
         import.meta.env.VITE_API_URL ||
-        'https://booking-task-backend.onrender.com',
+        'https://booking-task-backend.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
