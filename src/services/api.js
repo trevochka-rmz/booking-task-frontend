@@ -3,7 +3,7 @@ import axios from 'axios';
 const api = axios.create({
     baseURL:
         import.meta.env.VITE_API_URL ||
-        'booking-task-backend-production.up.railway.app/api',
+        'booking-task-backend-production.up.railway.app/8080/api',
 });
 
 api.interceptors.request.use((config) => {
