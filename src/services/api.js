@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL:
-        'http://localhost:5002/api/https:' ||
+        'http://localhost:5002/api' ||
         'https://booking-task-backend.onrender.com/api',
 });
 
