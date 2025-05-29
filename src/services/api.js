@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://booking-task-backend.onrender.com/api',
+    baseURL:
+        'http://localhost:5002/api/https:' ||
+        'https://booking-task-backend.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
