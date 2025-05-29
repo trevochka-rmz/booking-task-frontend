@@ -1,9 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL:
-        import.meta.env.VITE_API_URL ||
-        'booking-task-backend-production.up.railway.app/8080/api',
+    baseURL: 'https://booking-task-backend.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
